@@ -1,10 +1,11 @@
-import { Counter } from "./exercises";
+import { Counter, AgeChecker } from "./exercises";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
+      <AgeChecker />
     </div>
   );
 }
