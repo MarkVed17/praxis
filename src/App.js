@@ -1,4 +1,9 @@
-import { Counter, AgeChecker, PasswordMatcher } from "./exercises";
+import {
+  Counter,
+  AgeChecker,
+  PasswordMatcher,
+  CharacterCounter
+} from "./exercises";
 import "./styles.css";
 
 export default function App() {
@@ -6,7 +11,8 @@ export default function App() {
     <div className="App">
       {/* <Counter /> */}
       {/* <AgeChecker /> */}
-      <PasswordMatcher />
+      {/* <PasswordMatcher /> */}
+      <CharacterCounter />
     </div>
   );
 }
