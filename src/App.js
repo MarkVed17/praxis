@@ -5,7 +5,8 @@ import {
   CharacterCounter,
   DisableSubmit,
   PasswordVisibility,
-  AddToCart
+  AddToCart,
+  ToDoApp
 } from "./exercises";
 import "./styles.css";
 
@@ -18,7 +19,8 @@ export default function App() {
       {/* <CharacterCounter /> */}
       {/* <DisableSubmit /> */}
       {/* <PasswordVisibility /> */}
-      <AddToCart />
+      {/* <AddToCart /> */}
+      <ToDoApp />
     </div>
   );
 }
