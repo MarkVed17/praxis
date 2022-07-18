@@ -3,7 +3,8 @@ import {
   AgeChecker,
   PasswordMatcher,
   CharacterCounter,
-  DisableSubmit
+  DisableSubmit,
+  PasswordVisibility
 } from "./exercises";
 import "./styles.css";
 
@@ -14,7 +15,8 @@ export default function App() {
       {/* <AgeChecker /> */}
       {/* <PasswordMatcher /> */}
       {/* <CharacterCounter /> */}
-      <DisableSubmit />
+      {/* <DisableSubmit /> */}
+      <PasswordVisibility />
     </div>
   );
 }
