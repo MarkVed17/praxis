@@ -6,3 +6,4 @@ export { DisableSubmit } from "./DisableSubmit";
 export { PasswordVisibility } from "./PasswordVisbility";
 export { AddToCart } from "./AddToCart";
 export { ToDoApp } from "./ToDoApp";
+export { ThemeToggle } from "./ThemeToggle";

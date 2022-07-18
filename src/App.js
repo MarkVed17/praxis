@@ -6,7 +6,8 @@ import {
   DisableSubmit,
   PasswordVisibility,
   AddToCart,
-  ToDoApp
+  ToDoApp,
+  ThemeToggle
 } from "./exercises";
 import "./styles.css";
 
@@ -20,7 +21,8 @@ export default function App() {
       {/* <DisableSubmit /> */}
       {/* <PasswordVisibility /> */}
       {/* <AddToCart /> */}
-      <ToDoApp />
+      {/* <ToDoApp /> */}
+      <ThemeToggle />
     </div>
   );
 }
