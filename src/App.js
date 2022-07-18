@@ -9,6 +9,7 @@ import {
   ToDoApp,
   ThemeToggle
 } from "./exercises/useState-excercises";
+import { LoggingCounter } from "./exercises/useEffect-exercises";
 import "./styles.css";
 
 export default function App() {
@@ -22,7 +23,8 @@ export default function App() {
       {/* <PasswordVisibility /> */}
       {/* <AddToCart /> */}
       {/* <ToDoApp /> */}
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
+      <LoggingCounter />
     </div>
   );
 }
