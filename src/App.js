@@ -4,7 +4,8 @@ import {
   PasswordMatcher,
   CharacterCounter,
   DisableSubmit,
-  PasswordVisibility
+  PasswordVisibility,
+  AddToCart
 } from "./exercises";
 import "./styles.css";
 
@@ -16,7 +17,8 @@ export default function App() {
       {/* <PasswordMatcher /> */}
       {/* <CharacterCounter /> */}
       {/* <DisableSubmit /> */}
-      <PasswordVisibility />
+      {/* <PasswordVisibility /> */}
+      <AddToCart />
     </div>
   );
 }
