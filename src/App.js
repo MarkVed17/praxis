@@ -8,7 +8,7 @@ import {
   AddToCart,
   ToDoApp,
   ThemeToggle
-} from "./exercises";
+} from "./exercises/useState-excercises";
 import "./styles.css";
 
 export default function App() {
