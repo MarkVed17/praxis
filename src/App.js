@@ -31,8 +31,8 @@ export default function App() {
       {/* <ThemeToggle /> */}
       {/* <LoggingCounter /> */}
       {/* <PredictOutput /> */}
-      {/* <Wishlist /> */}
-      <LoggingCounterOnce />
+      <Wishlist />
+      {/* <LoggingCounterOnce /> */}
     </div>
   );
 }

@@ -21,7 +21,7 @@ export const Wishlist = () => {
       localStorage.setItem("myWishList", JSON.stringify(wishList));
       console.log("Data updated!");
     }
-  });
+  }, [wishList]);
 
   return (
     <div>
