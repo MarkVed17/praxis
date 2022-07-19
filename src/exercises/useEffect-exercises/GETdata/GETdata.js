@@ -6,15 +6,14 @@ export const GETdata = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const getUsers = async () => {
-    setIsLoading(true);
-    const response = await axios.get("/api/users");
-    // console.log(response);
-
-    if (response.status === 200) {
+    try {
+      setIsLoading(true);
+      const response = await axios.get("/api/users");
+      // console.log(response);
       setUsersData(response.data.users);
       setIsLoading(false);
-    } else {
-      console.log("Oops! error fetching data");
+    } catch (error) {
+      console.error("Oops! error fetching data. \n", error);
       setIsLoading(false);
     }
   };
