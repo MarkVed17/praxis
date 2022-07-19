@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import { CartContext, useCart } from "./cart-context";
+import { useCart } from "./cart-context";
 
 export function ProductListing() {
   return ["1", "2", "3", "4"].map((item) => <h2 key={item}>Product {item}</h2>);
