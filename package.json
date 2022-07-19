@@ -5,6 +5,8 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "0.27.2",
+    "miragejs": "0.1.45",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "4.0.0",

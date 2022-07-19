@@ -1,0 +1,1 @@
+export { GETdata } from "./GETdata";

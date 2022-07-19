@@ -10,6 +10,7 @@ import {
   ThemeToggle
 } from "./exercises/useState-excercises";
 import {
+  GETdata,
   LoggingCounter,
   LoggingCounterOnce,
   PredictOutput,
@@ -31,8 +32,9 @@ export default function App() {
       {/* <ThemeToggle /> */}
       {/* <LoggingCounter /> */}
       {/* <PredictOutput /> */}
-      <Wishlist />
+      {/* <Wishlist /> */}
       {/* <LoggingCounterOnce /> */}
+      <GETdata />
     </div>
   );
 }
