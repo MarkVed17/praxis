@@ -9,7 +9,7 @@ import {
   ToDoApp,
   ThemeToggle
 } from "./exercises/useState-excercises";
-import { LoggingCounter, PredictOutput } from "./exercises/useEffect-exercises";
+import { LoggingCounter, PredictOutput, Wishlist } from "./exercises/useEffect-exercises";
 import "./styles.css";
 
 export default function App() {
@@ -25,7 +25,8 @@ export default function App() {
       {/* <ToDoApp /> */}
       {/* <ThemeToggle /> */}
       {/* <LoggingCounter /> */}
-      <PredictOutput />
+      {/* <PredictOutput /> */}
+      <Wishlist />
     </div>
   );
 }
