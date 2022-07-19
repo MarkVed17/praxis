@@ -1,2 +1,2 @@
 export { ProductListing, Cart } from "./Ecommerce";
-export { CartContext } from "./cart-context";
+export { CartContext, CartProvider } from "./cart-context";

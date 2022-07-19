@@ -5,7 +5,7 @@ import setupProductsMockServer from "./exercises/useEffect-exercises/api/product
 import setupAddressesMockServer from "./exercises/useEffect-exercises/api/addresses-mock.server";
 
 import App from "./App";
-import { CartContext } from "./exercises/useContext-exercises";
+import { CartProvider } from "./exercises/useContext-exercises";
 
 // setupUsersMockServer();
 // setupProductsMockServer();
@@ -16,10 +16,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <CartContext.Provider
-      value={{ cartItems: 4, cartLogger: () => console.log("carting") }}
-    >
+    <CartProvider>
       <App />
-    </CartContext.Provider>
+    </CartProvider>
   </StrictMode>
 );
