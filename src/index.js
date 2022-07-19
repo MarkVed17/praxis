@@ -5,16 +5,19 @@ import setupProductsMockServer from "./exercises/useEffect-exercises/api/product
 import setupAddressesMockServer from "./exercises/useEffect-exercises/api/addresses-mock.server";
 
 import App from "./App";
+import { CartContext } from "./exercises/useContext-exercises";
 
 // setupUsersMockServer();
 // setupProductsMockServer();
-setupAddressesMockServer();
+// setupAddressesMockServer();
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App />
+    <CartContext.Provider value={{ cartItems: 4 }}>
+      <App />
+    </CartContext.Provider>
   </StrictMode>
 );

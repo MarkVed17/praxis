@@ -19,6 +19,7 @@ import {
   Wishlist
 } from "./exercises/useEffect-exercises";
 import "./styles.css";
+import { Cart, ProductListing } from "./exercises/useContext-exercises";
 
 export default function App() {
   return (
@@ -38,7 +39,9 @@ export default function App() {
       {/* <LoggingCounterOnce /> */}
       {/* <GETusers /> */}
       {/* <GETproducts /> */}
-      <AddressManagement />
+      {/* <AddressManagement /> */}
+      <Cart />
+      <ProductListing />
     </div>
   );
 }
