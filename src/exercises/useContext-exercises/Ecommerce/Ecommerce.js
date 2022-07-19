@@ -6,7 +6,8 @@ export function ProductListing() {
 }
 
 export function Cart() {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, cartLogger } = useContext(CartContext);
+  cartLogger();
 
   return (
     <>

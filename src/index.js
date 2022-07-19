@@ -16,7 +16,9 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <CartContext.Provider value={{ cartItems: 4 }}>
+    <CartContext.Provider
+      value={{ cartItems: 4, cartLogger: () => console.log("carting") }}
+    >
       <App />
     </CartContext.Provider>
   </StrictMode>
