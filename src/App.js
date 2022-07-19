@@ -10,6 +10,7 @@ import {
   ThemeToggle
 } from "./exercises/useState-excercises";
 import {
+  AddressManagement,
   GETproducts,
   GETusers,
   LoggingCounter,
@@ -36,7 +37,8 @@ export default function App() {
       {/* <Wishlist /> */}
       {/* <LoggingCounterOnce /> */}
       {/* <GETusers /> */}
-      <GETproducts />
+      {/* <GETproducts /> */}
+      <AddressManagement />
     </div>
   );
 }
