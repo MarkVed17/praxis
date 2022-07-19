@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-export const GETdata = () => {
+export const GETusers = () => {
   const [usersData, setUsersData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 

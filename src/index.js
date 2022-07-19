@@ -1,10 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import setupMockServer from "./exercises/useEffect-exercises/api/mock.server";
+import setupUsersMockServer from "./exercises/useEffect-exercises/api/users-mock.server";
+import setupProductsMockServer from "./exercises/useEffect-exercises/api/products-mock.server";
 
 import App from "./App";
 
-setupMockServer();
+// setupUsersMockServer();
+setupProductsMockServer();
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);

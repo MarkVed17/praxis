@@ -1,0 +1,1 @@
+export { GETproducts } from "./GETproducts";

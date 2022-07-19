@@ -1,0 +1,1 @@
+export { GETusers } from "./GETusers";
