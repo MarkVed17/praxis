@@ -16,8 +16,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <CartProvider>
+    {/* <CartProvider> */}
       <App />
-    </CartProvider>
+    {/* </CartProvider> */}
   </StrictMode>
 );

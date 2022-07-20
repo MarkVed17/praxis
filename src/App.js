@@ -22,6 +22,7 @@ import { Cart, ProductListing } from "./exercises/useContext-exercises";
 
 import "./styles.css";
 import { DocumentTitleHook, AsyncHook } from "./exercises/custom-hooks";
+import { LocalStorageHook } from "./exercises/custom-hooks/LocalStorageHook";
 
 export default function App() {
   return (
@@ -45,7 +46,8 @@ export default function App() {
       {/* <Cart />
       <ProductListing /> */}
       {/* <DocumentTitleHook /> */}
-      <AsyncHook />
+      {/* <AsyncHook /> */}
+      <LocalStorageHook />
     </div>
   );
 }
