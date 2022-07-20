@@ -7,10 +7,15 @@ const numList = [
 ];
 
 function oddAndEvenSumReducer(accumulator, value) {
-  if (value.type === "odd") {
-    return { ...accumulator, oddSum: accumulator.oddSum + value.payload };
-  } else {
-    return { ...accumulator, evenSum: accumulator.evenSum + value.payload };
+  switch (value.type) {
+    case "odd":
+      return { ...accumulator, oddSum: accumulator.oddSum + value.payload };
+
+    case "even":
+      return { ...accumulator, evenSum: accumulator.evenSum + value.payload };
+
+    default:
+      return accumulator;
   }
 }
 
