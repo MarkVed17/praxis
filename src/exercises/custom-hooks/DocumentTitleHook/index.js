@@ -1,0 +1,1 @@
+export { DocumentTitleHook } from "./DocumentTitleHook";

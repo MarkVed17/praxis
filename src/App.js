@@ -18,8 +18,10 @@ import {
   PredictOutput,
   Wishlist
 } from "./exercises/useEffect-exercises";
-import "./styles.css";
 import { Cart, ProductListing } from "./exercises/useContext-exercises";
+
+import "./styles.css";
+import { DocumentTitleHook, AsyncHook } from "./exercises/custom-hooks";
 
 export default function App() {
   return (
@@ -40,8 +42,10 @@ export default function App() {
       {/* <GETusers /> */}
       {/* <GETproducts /> */}
       {/* <AddressManagement /> */}
-      <Cart />
-      <ProductListing />
+      {/* <Cart />
+      <ProductListing /> */}
+      {/* <DocumentTitleHook /> */}
+      <AsyncHook />
     </div>
   );
 }
