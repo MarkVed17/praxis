@@ -1,10 +1,16 @@
-const numList = [1, 3, 55, 22, 44];
+const numList = [
+  { type: "odd", payload: 1 },
+  { type: "odd", payload: 3 },
+  { type: "odd", payload: 55 },
+  { type: "even", payload: 22 },
+  { type: "even", payload: 44 }
+];
 
 function oddAndEvenSumReducer(accumulator, value) {
-  if (value % 2 !== 0) {
-    return { ...accumulator, oddSum: accumulator.oddSum + value };
+  if (value.type === "odd") {
+    return { ...accumulator, oddSum: accumulator.oddSum + value.payload };
   } else {
-    return { ...accumulator, evenSum: accumulator.evenSum + value };
+    return { ...accumulator, evenSum: accumulator.evenSum + value.payload };
   }
 }
 
