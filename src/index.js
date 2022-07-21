@@ -6,6 +6,7 @@ import setupAddressesMockServer from "./exercises/useEffect-exercises/api/addres
 
 import App from "./App";
 import { CartProvider } from "./exercises/useContext-exercises";
+import { CounterProvider } from "./exercises/useReducer-exercises";
 
 // setupUsersMockServer();
 // setupProductsMockServer();
@@ -17,7 +18,9 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     {/* <CartProvider> */}
+    <CounterProvider>
       <App />
+    </CounterProvider>
     {/* </CartProvider> */}
   </StrictMode>
 );

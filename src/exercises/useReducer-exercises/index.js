@@ -1,1 +1,1 @@
-export { IncDecCounter } from "./IncDecCounter";
+export * from "./IncDecCounter";
