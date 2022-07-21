@@ -19,8 +19,15 @@ import {
   Wishlist
 } from "./exercises/useEffect-exercises";
 import { Cart, ProductListing } from "./exercises/useContext-exercises";
-import { DocumentTitleHook, AsyncHook, LocalStorageHook } from "./exercises/custom-hooks";
-import { IncDecCounter } from "./exercises/useReducer-exercises";
+import {
+  DocumentTitleHook,
+  AsyncHook,
+  LocalStorageHook
+} from "./exercises/custom-hooks";
+import {
+  CartManagement,
+  IncDecCounter
+} from "./exercises/useReducer-exercises";
 import "./styles.css";
 
 export default function App() {
@@ -47,7 +54,8 @@ export default function App() {
       {/* <DocumentTitleHook /> */}
       {/* <AsyncHook /> */}
       {/* <LocalStorageHook /> */}
-      <IncDecCounter />
+      {/* <IncDecCounter /> */}
+      <CartManagement />
     </div>
   );
 }
