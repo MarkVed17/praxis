@@ -19,10 +19,9 @@ import {
   Wishlist
 } from "./exercises/useEffect-exercises";
 import { Cart, ProductListing } from "./exercises/useContext-exercises";
-
+import { DocumentTitleHook, AsyncHook, LocalStorageHook } from "./exercises/custom-hooks";
+import { IncDecCounter } from "./exercises/useReducer-exercises";
 import "./styles.css";
-import { DocumentTitleHook, AsyncHook } from "./exercises/custom-hooks";
-import { LocalStorageHook } from "./exercises/custom-hooks/LocalStorageHook";
 
 export default function App() {
   return (
@@ -47,7 +46,8 @@ export default function App() {
       <ProductListing /> */}
       {/* <DocumentTitleHook /> */}
       {/* <AsyncHook /> */}
-      <LocalStorageHook />
+      {/* <LocalStorageHook /> */}
+      <IncDecCounter />
     </div>
   );
 }
