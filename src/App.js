@@ -26,6 +26,7 @@ import {
 } from "./exercises/custom-hooks";
 import {
   CartManagement,
+  ECommFilters,
   IncDecCounter
 } from "./exercises/useReducer-exercises";
 import "./styles.css";
@@ -55,7 +56,8 @@ export default function App() {
       {/* <AsyncHook /> */}
       {/* <LocalStorageHook /> */}
       {/* <IncDecCounter /> */}
-      <CartManagement />
+      {/* <CartManagement /> */}
+      <ECommFilters />
     </div>
   );
 }
