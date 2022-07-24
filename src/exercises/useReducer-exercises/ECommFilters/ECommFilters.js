@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useReducer } from "react";
 
 import faker from "faker";
+import { filtersReducer } from "./filtersReducer";
+import { getSortedProducts } from "./getSortedProducts";
+import { getFilteredProducts } from "./getFilteredProducts";
 
 faker.seed(123);
 
-const data = [...Array(50)].map((item) => ({
+const products = [...Array(50)].map((item) => ({
   id: faker.random.uuid(),
   name: faker.commerce.productName(),
   image: faker.random.image(),
@@ -37,17 +40,43 @@ const data = [...Array(50)].map((item) => ({
 }));
 
 export const ECommFilters = () => {
+  const [state, dispatch] = useReducer(filtersReducer, {
+    sortBy: null,
+    showInventory: true,
+    showFastDeliveryOnly: false
+  });
+
+  const { sortBy, showInventory, showFastDeliveryOnly } = state;
+
+  const sortedData = getSortedProducts(products, sortBy);
+  const filteredData = getFilteredProducts(sortedData, {
+    showInventory,
+    showFastDeliveryOnly
+  });
+
   return (
     <>
       <div className="App">
         <fieldset>
           <legend>Sort by Price</legend>
           <label>
-            <input type="radio" />
+            <input
+              type="radio"
+              onChange={() =>
+                dispatch({ type: "SORT_BY", payload: "PRICE_LOW_TO_HIGH" })
+              }
+              checked={sortBy === "PRICE_LOW_TO_HIGH"}
+            />
             Low to High
           </label>
           <label>
-            <input type="radio" />
+            <input
+              type="radio"
+              onChange={() =>
+                dispatch({ type: "SORT_BY", payload: "PRICE_HIGH_TO_LOW" })
+              }
+              checked={sortBy && sortBy === "PRICE_HIGH_TO_LOW"}
+            />
             High to Low
           </label>
         </fieldset>
@@ -55,14 +84,23 @@ export const ECommFilters = () => {
         <fieldset>
           <legend>Filter by</legend>
           <label>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => dispatch({ type: "TOGGLE_INVENTORY" })}
+              checked={showInventory}
+            />
             Include Out of Stock
           </label>
           <label>
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              onChange={() => dispatch({ type: "TOGGLE_DELIVERY" })}
+              checked={showFastDeliveryOnly}
+            />
             Fast Delivery only
           </label>
         </fieldset>
+        <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
         <div
           style={{
             display: "flex",
@@ -70,7 +108,7 @@ export const ECommFilters = () => {
             justifyContent: "center"
           }}
         >
-          {data.map(
+          {filteredData.map(
             ({
               id,
               name,
