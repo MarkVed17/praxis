@@ -9,7 +9,8 @@ import {
   ToDoApp,
   ThemeToggle,
   BrandFilter,
-  TodosFilter
+  TodosFilter,
+  WelcomeMessage
 } from "./exercises/useState-excercises";
 import {
   AddressManagement,
@@ -61,7 +62,8 @@ export default function App() {
       {/* <CartManagement /> */}
       {/* <ECommFilters /> */}
       {/* <BrandFilter /> */}
-      <TodosFilter />
+      {/* <TodosFilter /> */}
+      <WelcomeMessage />
     </div>
   );
 }

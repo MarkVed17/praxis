@@ -9,3 +9,4 @@ export { ToDoApp } from "./ToDoApp";
 export { ThemeToggle } from "./ThemeToggle";
 export { BrandFilter } from "./BrandFilter";
 export { TodosFilter } from "./TodosFilter";
+export { WelcomeMessage } from "./WelcomeMessage";
