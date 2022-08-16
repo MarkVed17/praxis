@@ -10,7 +10,8 @@ import {
   ThemeToggle,
   BrandFilter,
   TodosFilter,
-  WelcomeMessage
+  WelcomeMessage,
+  AddCarObject
 } from "./exercises/useState-excercises";
 import {
   AddressManagement,
@@ -63,7 +64,8 @@ export default function App() {
       {/* <ECommFilters /> */}
       {/* <BrandFilter /> */}
       {/* <TodosFilter /> */}
-      <WelcomeMessage />
+      {/* <WelcomeMessage /> */}
+      <AddCarObject />
     </div>
   );
 }

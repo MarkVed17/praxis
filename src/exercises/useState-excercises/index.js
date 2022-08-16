@@ -10,3 +10,4 @@ export { ThemeToggle } from "./ThemeToggle";
 export { BrandFilter } from "./BrandFilter";
 export { TodosFilter } from "./TodosFilter";
 export { WelcomeMessage } from "./WelcomeMessage";
+export { AddCarObject } from "./AddCarObject";
