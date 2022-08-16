@@ -7,7 +7,8 @@ import {
   PasswordVisibility,
   AddToCart,
   ToDoApp,
-  ThemeToggle
+  ThemeToggle,
+  BrandFilter
 } from "./exercises/useState-excercises";
 import {
   AddressManagement,
@@ -57,7 +58,8 @@ export default function App() {
       {/* <LocalStorageHook /> */}
       {/* <IncDecCounter /> */}
       {/* <CartManagement /> */}
-      <ECommFilters />
+      {/* <ECommFilters /> */}
+      <BrandFilter />
     </div>
   );
 }

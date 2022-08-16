@@ -1,0 +1,1 @@
+export { BrandFilter } from "./BrandFilter";
