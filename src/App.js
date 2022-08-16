@@ -8,7 +8,8 @@ import {
   AddToCart,
   ToDoApp,
   ThemeToggle,
-  BrandFilter
+  BrandFilter,
+  TodosFilter
 } from "./exercises/useState-excercises";
 import {
   AddressManagement,
@@ -59,7 +60,8 @@ export default function App() {
       {/* <IncDecCounter /> */}
       {/* <CartManagement /> */}
       {/* <ECommFilters /> */}
-      <BrandFilter />
+      {/* <BrandFilter /> */}
+      <TodosFilter />
     </div>
   );
 }
